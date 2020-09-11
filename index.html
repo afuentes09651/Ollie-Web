@@ -29,6 +29,26 @@
       margin-right: auto;
       width: 50%;
     }
+
+    .par{
+      font-size: 1.25em;
+      font-weight: light;
+      display: -webkit-inline-box;
+      background-color:none;
+    }
+
+  img{
+    height: 25%;
+    width: 25%;
+  }
+
+  .contain{
+
+    width: 100%;
+    height: 100%;
+    background-color:chartreuse;
+  }
+
   </style>
 
 </head>
@@ -54,25 +74,34 @@
 
 
     <!-- Just a picture to start-->
-    <figure align="center">
+    <figure align="center ">
 
           <img class = "scale-down center-pic " src= ollie.JPG alt= "Ollie in a Star Trek uniform"/>
-          <figfigcaption>
+          <figcaption>
             Ollie the Cat
-          </figfigcaption>
-          <p class="float-right">
+          </figcaption>
+          <p class="float-right"> <span class="par">
             This is Ollie. He may not look like much (he doesn't even neccesarily do much...), but Ollie is a very special cat!
             Ollie has gone on trips, met famous people, and even went to Disneyland. Ollie is the best cat in the world!
+          </span>
           </p>
     </figure>
-    <hr />
-    <h3 align="right">The Cat that Smiles Back</h3>
-    <figure align="left">
-      <img alt="Ollie smiling"/><!-- Put an image of Ollie smiling here-->
-      <p>
-        Ollie is a happy kitty with a surprising amount of personality despite sleeping half the time.
-      </p>
-    </figure>
+    <hr/>
+
+    <div class="contain">
+      <h5 align="right" >The Cat that Smiles Back</h5>
+      <figure align="left">
+        <img class="float-left" src=couch.jpeg alt="Ollie smiling"/><!-- Put an image of Ollie smiling here-->
+        <p class="float-right">
+          Ollie is a happy kitty with a surprising amount of personality despite sleeping half the time.
+        </p>
+      </figure>
+    </div>
+
+
+
+
+
   </body>
 
 </html>
