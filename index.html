@@ -12,96 +12,79 @@
 
     .subtitle{
       font-size: .75em;
+      margin-bottom: 0;
     }
 
-    body{
-      background-color: #fdffdb;
+    .head{
+      background-color: #dc3545;
     }
 
-    .scale-down{
-      height: 50%;
-      width: 50%;
+    html{
+      background-color: grey;
     }
 
-    .center-pic {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
+    .navbar{
+      padding: 0;
     }
 
-    .par{
-      font-size: 1.25em;
-      font-weight: light;
-      display: -webkit-inline-box;
-      background-color:none;
+    .cimg{
+      height: 25rem;
+      width: 25rem;
+      align-self: center;
     }
-
-  img{
-    height: 25%;
-    width: 25%;
-  }
-
-  .contain{
-
-    width: 100%;
-    height: 100%;
-    background-color:chartreuse;
-  }
 
   </style>
 
 </head>
-  <header>
+
+<!-- This is the header of the -->
+  <header class= "head">
       <h1 align="center">Ollie's Anonymous</h1>
       <h3 align="center" class="subtitle" >All Things Ollie!!!</h3>
     </header>
 
-    <nav class="navbar bg-light navbar-expand-sm justify-content-center">
-      <ul class= "navbar-nav">
-        <li class = "nav-item">
-          <a class="nav-link" href="#">Link 1</a>
+<!-- The Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-light navpad">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link 2</a>
+          <a class="nav-link" href="#">About</a>
         </li>
-        </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
     </nav>
-</nav>
 
-  <body class="container">
-
-
-
-    <!-- Just a picture to start-->
-    <figure align="center ">
-
-          <img class = "scale-down center-pic " src= ollie.JPG alt= "Ollie in a Star Trek uniform"/>
-          <figcaption>
-            Ollie the Cat
-          </figcaption>
-          <p class="float-right"> <span class="par">
-            This is Ollie. He may not look like much (he doesn't even neccesarily do much...), but Ollie is a very special cat!
-            Ollie has gone on trips, met famous people, and even went to Disneyland. Ollie is the best cat in the world!
-          </span>
-          </p>
-    </figure>
-    <hr/>
-
-    <div class="contain">
-      <h5 align="right" >The Cat that Smiles Back</h5>
-      <figure align="left">
-        <img class="float-left" src=couch.jpeg alt="Ollie smiling"/><!-- Put an image of Ollie smiling here-->
-        <p class="float-right">
-          Ollie is a happy kitty with a surprising amount of personality despite sleeping half the time.
-        </p>
-      </figure>
+    <!-- Let's add a carousel to show off some Ollie pics! -->
+    <div id="ollieCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" align="center">
+      <img class="d-block cimg" src="vertical.png" alt="First slide">
     </div>
+    <div class="carousel-item" align="center">
+      <img class="d-block cimg" src="ollie.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 cimg" src="..." alt="Third slide">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container" id="ollie-intro">
+  <h4>Who is Ollie?</h4>
+  <img class="cimg float-left" src="ollie.jpg"/>
+  <p class="float-right">
+    Ollie is a kitty cat unlike any other! He likes to eat, sleep, and sleep some more!
+  </p>
+</div>
 
 
 
 
-
-  </body>
 
 </html>
